@@ -1,0 +1,115 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body.noscroll
+    noscript
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper
+      // header SECTION
+      include _header
+      // header SECTION
+      // sidebar
+      include _sidebar
+      // sidebar
+      // main
+      main.main-container
+        .heaing-section Products
+        .main-container-scroll
+          .sidebar-level.sidebar-level--1
+            .sidebar-level-over
+              ul
+                li
+                  a(href="#!").waves-effect.waves-dark Zorg in zorg
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level Wankel Evenwicht
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD PRODUCT
+          .sidebar-level.sidebar-level--2
+            .sidebar-level-over
+              ol
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level  Dementie en het  Dementie en het
+                li
+                  a(href="#!").waves-effect.waves-dark Normen en waar
+                li
+                  a(href="#!").waves-effect.waves-dark Wat is verplegen
+                li
+                  a(href="#!").waves-effect.waves-dark Wat is wonen
+                li
+                  a(href="#!").waves-effect.waves-dark Niet medisch mo
+                li
+                  a(href="#!").waves-effect.waves-dark Anticiperend rou
+                li
+                  a(href="#!").waves-effect.waves-dark Wettelijke regelin
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD MODULE
+          .main-container-box
+            .container-box
+              .container-box-head
+                .container-box-head__title
+                  span 1.
+                  | Dementie en het wankel evenwicht
+                .container-box-head__button
+                  .drop-box
+                    a.dropdown-button(href='#',data-activates='drop1')
+                      | Action
+                      span.caret 
+                    ul#drop1.dropdown-content
+                      li
+                        a(href='#!') delete
+                      li
+                        a(href='#!') edit
+                  a(href="#!").add-item
+                    span.btn.waves-effect.waves-light
+                      img(src="images/icon9.png", alt="")
+                    span.btn-txt ADD ITEM
+                  a.properties.btn.waves-effect.waves-light(href="#!") PROPERTIES
+              .container-box-body
+                .list-item-container
+                  mixin list-item(title,icon,id)
+                    .list-item
+                      .list-item-drag
+                      .list-item-check
+                        input.filled-in(type='checkbox',id="check#{id}")
+                        label(for='check#{id}')
+                      .list-item-title
+                        a(href="#!")= title
+                      .list-item-icon
+                        span
+                          img(src="images/#{icon}.png", alt="")
+                  +list-item('Inleiding','icon11','1')
+                  +list-item('Doelen','icon12','2')
+                  +list-item('Hoe werkt het?','icon10','3')
+                  +list-item('1. Dementie','icon12','4')
+                  +list-item('2. Wat gebeurt er wanneer iemand dement','icon11','5')
+                  +list-item('3. Het wankel evenwicht','icon12','6')
+                  +list-item('4. De Dementie Kennis Quiz','icon11','7')
+                  +list-item('5. Alzheimer Nederland','icon11','8')
+                  +list-item('6. Berber...','icon10','9')
+                  +list-item('7. Over omgang en bejegening','icon11','10')
+                  +list-item('8. Anneke van der Plaats: Het demente br...','icon11','11')
+                  +list-item('9. ZZP','icon11','12')
+                  +list-item('Epiloog','icon10','13')
+                  +list-item('Toets "Dementie"','icon12','14')
+                  +list-item('Bijlag(n) bij module 1','icon11','15')
+                  +list-item('En dat nog dit','icon11','16')
+      // main
+      .above-footer
+    include _footer

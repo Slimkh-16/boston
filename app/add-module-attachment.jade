@@ -1,0 +1,143 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body.noscroll
+    noscript
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper
+      // header SECTION
+      include _header
+      // header SECTION
+      // sidebar
+      include _sidebar
+      // sidebar
+      // main
+      main.main-container
+        .heaing-section Products
+        .main-container-scroll.view-prop-box.view-prop-box--level2
+          .sidebar-level.sidebar-level--1
+            .sidebar-level-over
+              ul
+                li
+                  a(href="#!").waves-effect.waves-dark Zorg in zorg
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level Wankel Evenwicht
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD PRODUCT
+          .sidebar-level.sidebar-level--2
+            .sidebar-level-over
+              ol
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level  Dementie en het  Dementie en het
+                li
+                  a(href="#!").waves-effect.waves-dark Normen en waar
+                li
+                  a(href="#!").waves-effect.waves-dark Wat is verplegen
+                li
+                  a(href="#!").waves-effect.waves-dark Wat is wonen
+                li
+                  a(href="#!").waves-effect.waves-dark Niet medisch mo
+                li
+                  a(href="#!").waves-effect.waves-dark Anticiperend rou
+                li
+                  a(href="#!").waves-effect.waves-dark Wettelijke regelin
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD MODULE
+          .main-container-box
+            .container-box
+              .add-module
+                .container-box-head.clearfix
+                  .container-box-head__title
+                    .input-field
+                      input#inp1(type='text')
+                      label(for='inp1') Title of Module
+                  .container-box-head__button
+                    a.properties.btn.waves-effect.waves-light(href="#!") PROPERTIES
+                .container-box-body
+                  .list-item-container
+                    mixin list-item(title,icon,id)
+                      .list-item
+                        .list-item-drag
+                        .list-item-check
+                          input.filled-in(type='checkbox',id="check#{id}")
+                          label(for='check#{id}')
+                        .list-item-title
+                          a(href="#!")= title
+                        .list-item-icon
+                          span
+                            img(src="images/#{icon}.png", alt="")
+                    +list-item('Inleiding','icon11','1')
+                    +list-item('Doelen','icon12','2')
+                    +list-item('Hoe werkt het?','icon10','3')
+                    +list-item('Dementie','icon10','4')
+                  a(href="#!").add-item
+                    span.btn.waves-effect.waves-light
+                      img(src="images/icon9.png", alt="")
+                    span.btn-txt ADD ITEM
+          .back-nav
+            span.waves-effect.waves-dark
+              | &larr;
+          .properties-container.properties-container--first
+            .add-item-box
+              .modules-box
+                .input-field
+                  input#inp12(type='text')
+                  label(for='inp12') Title of item
+                +list-item('Intro wat is dementie','icon11','14')
+                +list-item('Video over dementie','icon11','14')
+                a(href="#!").add-item-element + Add element
+                .add-item-bottom
+                  a(href="#!").btn.waves-effect.waves-light SAVE
+                  select
+                    option(value='', disabled='', selected='') Choose your option
+                    option(value='1') Video
+                    option(value='2') Text
+                    option(value='3') Quiz
+                    option(value='5') Attachment
+                    option(value='6') Image
+                    option(value='7') Video
+                  a(href="#!").btn.waves-effect.waves-light PREVIEW
+          .back-nav.back-nav-level--2
+            span.waves-effect.waves-dark
+              | &larr;
+          .properties-container.properties-container--second
+            .attachment-box
+              ul.attachment-list
+                li
+                  span.attach-icon
+                    img(src="images/icon15.png", alt="")
+                  span.txt Advies voor leren
+                li
+                  span.attach-icon
+                    img(src="images/icon16.png", alt="")
+                  span.txt Snel lezen in 10 stappen
+                li
+                  span.attach-icon
+                    img(src="images/icon16.png", alt="")
+                  span.txt Advies voor leren
+              a.add-item(href='#!')
+                span.btn.waves-effect.waves-light
+                  img(src='images/icon9.png', alt='')
+                span.btn-txt ADD ITEM
+              .add-item-bottom.mt-30
+                a(href="#!").btn.waves-effect.waves-light SAVE
+      // main
+      .above-footer
+    include _footer

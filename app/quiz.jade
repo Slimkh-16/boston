@@ -1,0 +1,102 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body.noscroll
+    noscript
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper
+      // header SECTION
+      include _header
+      // header SECTION
+      // sidebar
+      include _sidebar
+      // sidebar
+      // main
+      main.main-container
+        .heaing-section Quiz
+        .main-container-scroll
+          .sidebar-level.sidebar-level--1
+            .sidebar-level-over
+              ul
+                li
+                  a(href="#!").waves-effect.waves-dark Zorg in zorg
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level Wankel Evenwicht
+          .sidebar-level.sidebar-level--2
+            .sidebar-level-over
+              ol
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level  Quiz 1
+
+                li
+                  a(href="#!").waves-effect.waves-dark Quiz 2
+
+                li
+                  a(href="#!").waves-effect.waves-dark Quiz 3
+
+                li
+                  a(href="#!").waves-effect.waves-dark Quiz 4
+
+                li
+                  a(href="#!").waves-effect.waves-dark Quiz 5
+
+                li
+                  a(href="#!").waves-effect.waves-dark Quiz 6
+
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD Quiz
+          .main-container-box
+            .add-item-box
+              .tabs-nav
+                ul.tabs
+                  li.tab
+                    a.active(href='#tab1') A - QUIZ  
+                  li.tab
+                    a(href='#tab2') B - QUIZ  
+                  li.tab
+                    a(href='#tab3') C - QUIZ  
+              #tab1.tab-content
+                .add-module.quiz-module
+                  .container-box-body
+                    .list-item-container
+                      mixin list-item(title,id)
+                        .list-item.quiz-item
+                          .list-item-drag
+                          .list-item-check
+                            input.filled-in(type='checkbox',id="check#{id}")
+                            label(for='check#{id}')
+                          .list-item-title
+                            a(href="#!")= title
+                      +list-item('Question 1','1')
+                      +list-item('Question 2','2')
+                      +list-item('Question 3','3')
+                      +list-item('Question 4','4')
+                      +list-item('Question 5','5')
+                      +list-item('Question 6','6')
+                      +list-item('Question 7','7')
+                      +list-item('Question 8','8')
+                    a.add-item-element(href='#!') + Add element
+                    .add-item-bottom.clearfix
+                      a.btn.waves-effect.waves-light(href='#!') SAVE
+                      a.btn.waves-effect.waves-light(href='#!') PROPERTIES
+      // main
+      .above-footer
+    include _footer

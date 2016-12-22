@@ -1,0 +1,452 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body.noscroll
+    noscript
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper
+      // header SECTION
+      include _header
+      // header SECTION
+      // sidebar
+      include _sidebar
+      // sidebar
+      // main
+      main.main-container
+        .heaing-section Users & Groups
+        .main-container-scroll.view-prop-box
+          .sidebar-level.sidebar-level--1
+            .sidebar-level-over
+              ul
+                li
+                  a(href="#!").waves-effect.waves-dark Hospice
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level Thuiszorg
+                li
+                  a(href="#!").waves-effect.waves-dark Ambulant
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD GROUP
+          .sidebar-level.sidebar-level--2
+            .sidebar-level-over
+              ol
+                li.active
+                  a(href="#!").waves-effect.waves-dark.with-under-level  Team 1
+                li
+                  a(href="#!").waves-effect.waves-dark Team 2
+                li
+                  a(href="#!").waves-effect.waves-dark Team 3
+              a(href="#!").add-item-lnk.waves-effect.waves-dark ADD GROUP
+          .main-container-box
+            .container-box.admin-box
+              .admin-head
+                span.admin-head-tlt Thuiszorg
+                .admin-head__right
+                  .searh-head
+                    form(action="#")
+                      input(type="text")
+                      button(type="submit").waves-effect.waves-light
+                        img(src="images/icon20.png", alt="")
+                  .drop-box
+                    a.dropdown-button(href='#',data-activates='drop1')
+                      | Action
+                      span.caret 
+                    ul#drop1.dropdown-content
+                      li
+                        a(href='#!') delete
+                      li
+                        a(href='#!') edit  
+                  a.properties.btn.waves-effect.waves-light(href="#!") PROPERTIES
+              .admin-body
+                table
+                  tr
+                    td 
+                      .check-all
+                        input.filled-in(type='checkbox',id="checkAll")
+                        label(for='checkAll')
+                    td First name
+                    td Last name
+                    td Group
+                    td Undifined
+                    td Undifined
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check1")
+                        label(for='check1')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check2")
+                        label(for='check2')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check3")
+                        label(for='check3')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check4")
+                        label(for='check4')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check5")
+                        label(for='check5')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check6")
+                        label(for='check6')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check7")
+                        label(for='check7')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check8")
+                        label(for='check8')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check9")
+                        label(for='check9')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check10")
+                        label(for='check10')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check11")
+                        label(for='check11')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check12")
+                        label(for='check12')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check13")
+                        label(for='check13')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check14")
+                        label(for='check14')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                  tr
+                    td
+                      .check-box
+                        input.filled-in(type='checkbox',id="check15")
+                        label(for='check15')
+                    td Randall
+                    td Ferguson
+                    td Team 1
+                    td  < undifined >
+                    td  < undifined >
+                .admin-body__foot.add-item-bottom
+                  .sort-page
+                    | Rows per page:
+                    select
+                      option(value='', disabled='', selected='') 10
+                      option(value='1') 10
+                      option(value='2') 15
+                      option(value='3') 20
+                  .status-page
+                    span 1-20 of 
+                    span 100
+                  a(href="#!").next-page
+                    img(src="images/icon19.png", alt="")
+                  a(href="#!").prev-page
+                    img(src="images/icon18.png", alt="")
+          .back-nav
+            span.waves-effect.waves-dark
+              | &larr;
+          .properties-container.properties-container--first
+            .properties-box.user-properties-box
+              .add-item-box
+                .tabs-nav
+                  ul.tabs
+                    li.tab
+                      a.active(href='#tab1') GENERAL  
+                    li.tab
+                      a(href='#tab2') USERS 
+                    li.tab
+                      a(href='#tab3') COMMUNICATION 
+              #tab1.tab-content
+                .heading-box
+                  span Name & Location
+                .input-field
+                  input#inpname5(type='text',value="Groep 3")
+                  label(for='inpname5') Group name
+                .logs-box
+                  .heading-box
+                    span Products & Timelines
+                  .logs-box-over
+                    table
+                      thead
+                        tr
+                          td Date
+                          td Activity
+                          td User
+                          td Timeline
+                          td Product
+                      tbody
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                .state-box
+                  .heading-box
+                    span State
+                  .switch
+                    label
+                      | Active
+                      input(type='checkbox')
+                      span.lever
+              #tab2.tab-content
+                .upload-file
+                  .heading-box
+                    span Attachments
+                  span.label-file
+                    | UPLOAD XLS:
+                  label.file-custom.add-item
+                    span.btn-txt Upload file
+                    span.btn.waves-effect.waves-light
+                      img(src='images/icon9.png', alt='')
+                    input(type="file")
+                  .users-add
+                    span.label-file
+                      | ADD USER BY HAND:
+                    .row
+                      .col.m4.s12
+                        .input-field
+                          input#inpname(type='text',value="Franke")
+                          label(for='inpname') First name
+                      .col.m4.s12
+                        .input-field
+                          input#inpname(type='text',value="Franke")
+                          label(for='inpname2') Kooistra
+                      .col.m4.s12
+                        .input-field
+                          input#inpname(type='email',value="tnpenter@gmail.com")
+                          label(for='inpname3') E-mail address
+                    a(href="#!").add-item
+                      span.btn-txt Add more
+                      span.btn.waves-effect.waves-light
+                        img(src='images/icon9.png', alt='')
+                    span.label-file
+                      | SEARCH USER:
+                    .searh-head
+                      form(action="#")
+                        input(type="text")
+                        button(type="submit").waves-effect.waves-light
+                          img(src="images/icon20.png", alt="")
+              #tab3.tab-content
+                .attachment-box
+                  .heading-box
+                    span Attachments
+                  ul.attachment-list
+                    li
+                      span.attach-icon
+                        img(src="images/icon15.png", alt="")
+                      span.txt Advies voor leren
+                    li
+                      span.attach-icon
+                        img(src="images/icon16.png", alt="")
+                      span.txt Snel lezen in 10 stappen
+                    li
+                      span.attach-icon
+                        img(src="images/icon16.png", alt="")
+                      span.txt Advies voor leren
+                  a.add-item(href='#!')
+                    span.btn.waves-effect.waves-light
+                      img(src='images/icon9.png', alt='')
+                    span.btn-txt ADD ATTACHMENT
+                .logs-box
+                  .heading-box
+                    span Logs
+                  .logs-box-over
+                    table
+                      thead
+                        tr
+                          td Date
+                          td Activity
+                          td User
+                          td Timeline
+                          td Product
+                      tbody
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                        tr
+                          td 24/9/2016
+                          td Finished module 1
+                          td -
+                          td Vertraagd
+                          td Zorg in zorg
+                .send-to-group
+                  .heading-box
+                    span Send email to group
+                  .input-field
+                    input#inp333(type='text',value="New modules will come soon")
+                    label(for='inp333') Subject
+                  .input-field
+                    textarea#textarea1.materialize-textarea
+                      | Hi Ya’ll/A bunch of new modules will come soon. Lipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet rhoncus porta. Cras bibendum, arcu vitae sagittis elementum, sapien nibh fringilla nunc, sollicitudin varius nisi ipsum ac sem.Regards, Franke
+                    label(for='textarea1') Message
+                  a(href="#!").btn.waves-effect.waves-light SAVE
+      // main
+      .above-footer
+    include _footer
