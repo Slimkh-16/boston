@@ -72,7 +72,7 @@ function getBrowser() {
 };
 var browserYou = getBrowser();
 if (browserYou.platform == 'mobile') { isMobile = true;document.documentElement.classList.add('mobile')}else {document.documentElement.classList.add('desktop')}
-if ((browserYou.browser == 'ie')) {document.documentElement.classList.add('ie');}
+if ((browserYou.browser == 'ie' &&  browserYou.versionShort == +'9' )) {document.documentElement.classList.add('ie');}
 if ((browserYou.browser == 'ie' &&  browserYou.versionShort < +'9') || ((browserYou.browser == 'opera' || browserYou.browser == 'operaWebkit') && browserYou.versionShort < +'18') || (browserYou.browser == 'firefox' &&  browserYou.versionShort < +'30')) {
     alert('Обновите браузер','')
 };
